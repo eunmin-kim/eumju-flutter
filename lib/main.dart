@@ -33,7 +33,7 @@ class _MyAppState extends State<MyApp> {
       ),
       Padding(
         padding: EdgeInsets.all(30),
-        child: AddDrunkSetting(),
+        child: AddDrunkSetting(selectedIndex: _selectedIndex,onIncrement: _incrementIndex, ),
       ),
     ];
   }
