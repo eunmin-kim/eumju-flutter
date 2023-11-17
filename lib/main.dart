@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:project/add_drunk_setting_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'add_nickname_page.dart';
+import 'package:project/alcohol_check_page.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -53,10 +55,7 @@ class _MyAppState extends State<MyApp> {
             // 데이터가 있으면 메인 페이지를 표시
             return MaterialApp(
               title: "Main Page",
-              home: Scaffold(
-                appBar: AppBar(),
-                body: Text("메인 화면"),
-              ),
+              home: AlcoholCheckPage(),
             );
           } else {
             // 데이터가 없으면 기본 페이지를 표시
