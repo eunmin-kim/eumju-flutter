@@ -1,5 +1,4 @@
 import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:project/add_drunk_setting_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
