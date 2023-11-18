@@ -216,6 +216,8 @@ class _AddDrunkSettingState extends State<AddDrunkSetting> {
                   await prefs.setString('juJong', dropdownDrunk);
                   await prefs.setString('juRang', drunkJan.text);
                   await prefs.setString('favoriteDrink', dropdownDrunk2);
+                  await prefs.setString('juRangUnit', dropdownJan); // 주량 단위 저장 (잔/병)
+
                   // widget.onIncrement?.call();
                   Navigator.push(context, MaterialPageRoute(builder: (context) => AlcoholCheckPage()));
                 } : null,
