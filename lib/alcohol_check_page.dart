@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:project/camera_page.dart';
+import 'profile_page.dart';
 
 class AlcoholCheckPage extends StatelessWidget {
   @override
@@ -64,7 +64,7 @@ class AlcoholCheckPage extends StatelessWidget {
                       // 카메라 아이콘 버튼
                       ElevatedButton(
                         onPressed: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => CameraApp()));
+                          // 카메라 촬영 기능을 여기에 구현
                         },
                         child: Column(
                           children: <Widget>[
@@ -124,9 +124,13 @@ class AlcoholCheckPage extends StatelessWidget {
                 label: '설정',
               ),
             ],
-            // 선택된 아이템에 따라 페이지 이동
             onTap: (index) {
-              // 이곳에 각 아이콘을 눌렀을 때의 동작을 구현하세요.
+              if (index == 1) { // 설정 아이콘 인덱스
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ProfilePage()),
+                );
+              }
             },
           ),
         ],
