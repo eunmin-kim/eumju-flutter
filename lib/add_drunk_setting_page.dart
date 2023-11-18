@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:project/alcohol_check_page.dart';
 
 
 class AddDrunkSetting extends StatefulWidget {
@@ -216,6 +217,7 @@ class _AddDrunkSettingState extends State<AddDrunkSetting> {
                   await prefs.setString('juRang', drunkJan.text);
                   await prefs.setString('favoriteDrink', dropdownDrunk2);
                   // widget.onIncrement?.call();
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => AlcoholCheckPage()));
                 } : null,
                 child: Text("작성하기"),
                 style: ElevatedButton.styleFrom(
