@@ -29,6 +29,7 @@ class _ProfilePageState extends State<ProfilePage> {
     });
   }
 
+  int _selectedIndex = 1; //메뉴바 파란색 만들기 변수임
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -61,6 +62,8 @@ class _ProfilePageState extends State<ProfilePage> {
       ),
 
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _selectedIndex, // 현재 선택된 탭 인덱스
+        selectedItemColor: Colors.blue, // 선택된 아이템의 색상을 파란색으로 설정
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
