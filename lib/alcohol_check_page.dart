@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project/camera_page.dart';
 
 class AlcoholCheckPage extends StatelessWidget {
   @override
@@ -63,7 +64,7 @@ class AlcoholCheckPage extends StatelessWidget {
                       // 카메라 아이콘 버튼
                       ElevatedButton(
                         onPressed: () {
-                          // 카메라 촬영 기능을 여기에 구현
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => CameraApp()));
                         },
                         child: Column(
                           children: <Widget>[
