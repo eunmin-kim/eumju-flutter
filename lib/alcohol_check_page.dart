@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'profile_page.dart';
 import 'package:project/camera_page.dart';
 
+import 'video_pick_page.dart';
+
 class AlcoholCheckPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -89,6 +91,7 @@ class AlcoholCheckPage extends StatelessWidget {
                       ElevatedButton(
                         onPressed: () {
                           // 여기에 그림 아이콘 버튼의 기능을 구현
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => VideoPickerPage()));
                         },
                         child: Column(
                           children: <Widget>[
