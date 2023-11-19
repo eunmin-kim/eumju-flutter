@@ -65,7 +65,7 @@ class AlcoholCheckPage extends StatelessWidget {
                       // 카메라 아이콘 버튼
                       ElevatedButton(
                         onPressed: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => CameraApp()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => VideoApp()));
                           // 카메라 촬영 기능을 여기에 구현
 
                         },
